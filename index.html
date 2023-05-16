@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS ASSIGNMENT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+
+    <input type="text" id="clr" class="calculator-screen z-depth-1" value="" />
+
+    <div class="calculator-keys">
+
+      <button type="button" id="clr" onclick="displayResult('+')" class="operator btn btn-info" value="+">+</button>
+      <button type="button" id="clr" onclick="displayResult('-')" class="operator btn btn-info" value="-">-</button>
+      <button type="button" id="clr" onclick="displayResult('*')" class="operator btn btn-info"
+        value="*">&times;</button>
+      <button type="button" id="clr" onclick="displayResult('/')" class="operator btn btn-info"
+        value="/">&divide;</button>
+
+      <button type="button" id="clr" onclick="displayResult('7')" value="7" id="btn"
+        class="btn btn-light waves-effect">7</button>
+      <button type="button" id="clr" onclick="displayResult('8')" value="8" id="btn"
+        class="btn btn-light waves-effect">8</button>
+      <button type="button" id="clr" onclick="displayResult('9')" value="9" id="btn"
+        class="btn btn-light waves-effect">9</button>
+
+
+      <button type="button" onclick="displayResult('4')" value="4" id="btn"
+        class="btn btn-light waves-effect">4</button>
+      <button type="button" onclick="displayResult('5')" value="5" id="btn"
+        class="btn btn-light waves-effect">5</button>
+      <button type="button" onclick="displayResult('6')" value="6" id="btn"
+        class="btn btn-light waves-effect">6</button>
+
+
+      <button type="button" onclick="displayResult('1')" value="1" id="btn"
+        class="btn btn-light waves-effect">1</button>
+      <button type="button" onclick="displayResult('2')" value="2" id="btn"
+        class="btn btn-light waves-effect">2</button>
+      <button type="button" onclick="displayResult('3')" value="3" id="btn"
+        class="btn btn-light waves-effect">3</button>
+
+
+      <button type="button" class="operator btn btn-info" onclick="displayResult('Math.cbrt')">3&#8730;x</button>
+      <button type="button" class="operator btn btn-info" onclick="displayResult('Math.LN10')">log<sub>10</sub>
+      </button>
+      <button type="button" class="operator btn btn-info" value="&#9986;"
+        onclick=" displayResult('Math.LN2')">log<sub>2</sub>
+      </button>
+      <button type="button" class="operator btn btn-info" value="&#8730;" onclick="displayResult('**2')">x
+        <sup>2</sup></button>
+      <button type="button" class="operator btn btn-info" value="**" onclick="displayResult('**3')">x <sup>3</sup>
+      </button>
+
+      <button type="button" onclick="displayResult('0')" value="0" class="btn btn-light waves-effect">0</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('Math.log')"
+        value="-">Log</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('Math.Pi')">Pi</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('%')" value="%">%</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('.')"
+        value="('Math.E')">E</button>
+      <button type="button" class="decimal function btn btn-secondary" value="Sin()"
+        onclick="displayResult('Math.sin')">Sin</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('Math.cos')"
+        value="*">cos</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('Math.tan')"
+        value="/">tan</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('&#40;')"
+        value="('&#40;') ">&#40;</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('&#41;')"
+        value="('&#41;')">&#41;</button>
+
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('&#41;')"
+        value="('&#8730;')">&#8730;</button>
+
+      <button type="button" class="decimal function btn btn-secondary" onclick="displayResult('**')">x*</button>
+
+      <button type="button" onclick="removeNum()" class="all-clear function btn btn-danger btn-sm"
+        value="all-clear">dlt</button>
+
+      <button type="button" onclick="clearBtn()" class="all-clear function btn btn-danger btn-sm"
+        value="all-clear">C</button>
+      <button type="button" onclick=" getResult(eval())" class="equal-sign operator btn btn-default"
+        value="=">=</button>
+
+
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
